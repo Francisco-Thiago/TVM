@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/painel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>TVM | Painel</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="item">
+            <a href="user.html">
+                <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" id="user">
+                    <path d="M256 256a112 112 0 10-112-112 112 112 0 00112 112zm0 32c-69.42 0-208 42.88-208 128v64h416v-64c0-85.12-138.58-128-208-128z"/>
+                </svg>
+                <span>Usuário</span>
+            </a>
+        </div>
+        <div class="operations">
+            <div class="item clicked">
+                <a href="painel.html">
+                    <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" id="painel">
+                        <path d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"/><path d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"/>
+                    </svg>
+                    <span>Painel</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="add_user.html">
+                    <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" id="add_user">
+                        <path d="M106 304v-54h54v-36h-54v-54H70v54H16v36h54v54h36z"/><circle cx="288" cy="144" r="112"/><path d="M288 288c-69.42 0-208 42.88-208 128v64h416v-64c0-85.12-138.58-128-208-128z"/>
+                    </svg>
+                    <span>Cadastrar</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="general.html">
+                    <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" id="general">
+                        <path d="M480 48H32a16 16 0 00-16 16v320a16 16 0 0016 16h168v32h-72v32h256v-32h-72v-32h168a16 16 0 0016-16V64a16 16 0 00-16-16zm-20 36v216H52V84zM240.13 354.08a16 16 0 1113.79 13.79 16 16 0 01-13.79-13.79z"/>
+                    </svg>
+                    <span>Visao geral</span>
+                </a>
+            </div>
+        </div>
+        <div class="operations">
+            <div class="item">
+                <a href="settings.html">
+                    <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" id="settings">
+                        <path d="M381.25 112a48 48 0 00-90.5 0H48v32h242.75a48 48 0 0090.5 0H464v-32zM176 208a48.09 48.09 0 00-45.25 32H48v32h82.75a48 48 0 0090.5 0H464v-32H221.25A48.09 48.09 0 00176 208zM336 336a48.09 48.09 0 00-45.25 32H48v32h242.75a48 48 0 0090.5 0H464v-32h-82.75A48.09 48.09 0 00336 336z"/>
+                    </svg>
+                    <span>Configuraçoes</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="?=logoff">
+                    <svg width="37" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path d="M304 336v40a40 40 0 01-40 40H104a40 40 0 01-40-40V136a40 40 0 0140-40h152c22.09 0 48 17.91 48 40v40M368 336l80-80-80-80M176 256h256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                    </svg>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="top-content">
+            <table id="routine">
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            <div>
+                                <svg width="22" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96"/>
+                                </svg>
+                                <span>Resumo diario</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serviços pendentes</td>
+                        <td>Serviços entregues</td>
+                        <td>Tecnicos ativos</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <svg width="120" viewBox="0 0 243 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M158.519 11.3025L160.116 20.7211H128.269V243H113.015V20.7211H81L84.832 13.1862L158.519 11.3025Z" fill="black"/>
+                <path d="M105.488 17.8955V225.105H98.895V23.5467L62.3369 150.698H57.4538L23.5468 76.2909L16.9538 99.8374L11.3026 156.349H7.53516L14.302 68.756L26.8353 65.9304L59.5753 139.112L93.0826 17.8955H105.488Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M107.372 16.0117V226.988H97.0119V36.9154L63.756 152.581H56.2428L23.9713 81.7635L18.8125 100.188L13.008 158.233H5.50098L12.5317 67.2242L27.9258 63.7536L59.1561 133.561L91.6496 16.0117H107.372ZM59.5759 139.112L26.836 65.9303L14.3027 68.7559L7.53583 156.349H11.3033L16.9544 99.8373L23.5475 76.2908L57.4544 150.698H62.3376L98.8956 23.5466V225.105H105.489V17.8954H93.0833L59.5759 139.112Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M135.628 223.199C185.642 216.315 224.163 173.406 224.163 121.5C224.163 64.8009 178.199 18.8372 121.5 18.8372C64.8009 18.8372 18.8372 64.8009 18.8372 121.5C18.8372 173.406 57.3582 216.315 107.372 223.199V242.187C46.9254 235.188 0 183.824 0 121.5C0 54.3974 54.3974 0 121.5 0C188.603 0 243 54.3974 243 121.5C243 183.824 196.075 235.188 135.628 242.187V223.199Z" fill="black"/>
+                <path d="M225.105 68.7559L150.698 224.163H135.628V16.9536H147.872L150.698 196.849L209.915 68.7559H225.105Z" fill="black"/>
+            </svg>    
+        </div>
+        <div id="bottom-content">
+            <div id="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Mês</th>
+                            <th colspan="2">Ano</th>
+                        </tr>
+                        <tr>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                            <th>Dom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>1</span></td>
+                            <td><span>2</span></td>
+                            <td><span>3</span></td>
+                            <td><span>4</span></td>
+                            <td><span>5</span></td>
+                            <td><span>6</span></td>
+                            <td><span>7</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>8</span></td>
+                            <td><span>9</span></td>
+                            <td><span>10</span></td>
+                            <td><span>11</span></td>
+                            <td><span>12</span></td>
+                            <td><span>13</span></td>
+                            <td><span>14</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>15</span></td>
+                            <td><span>16</span></td>
+                            <td><span>17</span></td>
+                            <td><span>18</span></td>
+                            <td><span>19</span></td>
+                            <td><span>20</span></td>
+                            <td><span>21</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>22</span></td>
+                            <td><span>23</span></td>
+                            <td><span>24</span></td>
+                            <td><span>25</span></td>
+                            <td><span>26</span></td>
+                            <td><span>27</span></td>
+                            <td><span>28</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>29</span></td>
+                            <td><span>30</span></td>
+                            <td><span>31</span></td>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tech">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tecnicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr>
+                            <td>000000</td>
+                            <td>Nome</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

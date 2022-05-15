@@ -1,0 +1,113 @@
+$black: #1E1E1E;
+$white: #fff;
+$gray: rgba(0, 0, 0, 0.658);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    .submit {
+        cursor: pointer;
+        font-size: .9em;
+        height: 40px;
+        margin-top: 3em;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid #1E1E1E;
+        border-radius: 8px;
+        background-color: $black;
+        color: $white;
+    }
+
+    .banner {
+        background-color: $black;
+        width: 100%;
+        padding: 1em;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin: 0 auto;
+        }
+    }
+
+    .form {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+        height: 100%;
+
+        h2 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+    }
+    
+    h1 {
+        font-size: 128px;
+        font-weight: 700;
+        color: white;
+        line-height: 156px;
+        text-align: center;
+        letter-spacing: -0.085em;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+
+        .forgot {
+            float: right;
+            text-decoration: none;
+            color: $gray;
+            
+            &:hover {
+                color: $black;
+            }
+        }
+
+        div{
+            display: flex;
+
+            label {
+                width: 50px;
+                height: 40px;
+                position: relative;
+                left: 10px;
+                background-color: black;
+                border-radius: 8px 0 0 8px;
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            
+            input {
+                width: 100%;
+                height: 40px;
+                font-size: .9em;
+                margin-bottom: 1em;
+                padding: 0 1em;
+                font-family: 'Montserrat', sans-serif;
+                border: 1px solid #1E1E1E;
+                border-radius: 8px;
+            }
+        }
+    }
+}

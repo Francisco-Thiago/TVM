@@ -1,0 +1,56 @@
+main {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .info {
+  width: 400px;
+  background-color: #000000da;
+  padding: 2em;
+  border-radius: 10px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+main .group-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .group-button .button {
+  display: inline-block;
+  margin: .3em;
+  padding: .5em 3em;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: background-color ease .4s;
+  transition: background-color ease .4s;
+  background-color: #fff;
+  color: #000000da;
+}
+/*# sourceMappingURL=add_user.css.map */

@@ -1,0 +1,41 @@
+$black: #000000da;
+$white: #fff;
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .info {
+        width: 400px;
+        background-color: $black;
+        padding: 2em;
+        border-radius: 10px;
+        height: min-content;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        font-weight: 700;
+        color: $white;
+    }
+    .group-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button {
+            display: inline-block;
+            margin: .3em;
+            padding: .5em 3em;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color ease .4s;
+            background-color: $white;
+            color: $black;
+        }
+    }
+}

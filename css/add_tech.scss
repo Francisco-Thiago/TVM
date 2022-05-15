@@ -1,0 +1,73 @@
+@import 'back';
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+
+    .button {
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        padding: .7em;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: #1E1E1E;
+    }
+
+    #client_data {
+        margin: 1em 0;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 0 10px;
+        grid-template-areas: 'info info' 
+                            'nome nome' 
+                            'email tel'
+                            'cpf id' 
+                            'password .';
+        
+        h2 {
+            grid-area: info;
+        }
+
+        #name {
+            grid-area: nome;
+        }
+        
+        #email {
+            grid-area: email;
+        }
+
+        #tel {
+            grid-area: tel;
+        }
+
+        #cpf {
+            grid-area: cpf;
+        }
+
+        #identificator {
+            grid-area: id;
+        }
+
+        #password {
+            grid-area: password;
+        }
+
+    }
+
+    input {
+        margin: 10px 0;
+        width: 100%;
+        height: 40px;
+        font-size: .9em;
+        margin-bottom: 1em;
+        padding: 0 1em;
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid #1E1E1E;
+        border-radius: 8px;
+    }
+}

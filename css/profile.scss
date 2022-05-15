@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .user_data {
+        input {
+            cursor: not-allowed;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.815);
+            font-family: 'Montserrat', sans-serif;
+            padding: .7em;
+            font-size: 1em;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 2em 0;
+            display: block;
+        }
+    }
+
+    .button {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        #go_out {
+            display: block;
+            color: #fff;
+            transition: background-color ease .3s;
+            background-color: #1e1e1ee8;
+            text-decoration: none;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            padding: .7em;
+            position: relative;
+            &:hover {
+                background-color: #1e1e1e;
+            }
+        }
+    }
+}

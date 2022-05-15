@@ -1,0 +1,10 @@
+@import 'back';
+@import 'table';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}

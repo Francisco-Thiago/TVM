@@ -1,0 +1,61 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+main h1 {
+  font-size: 1.5em;
+}
+
+main .user_data input {
+  cursor: not-allowed;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.815);
+  font-family: 'Montserrat', sans-serif;
+  padding: .7em;
+  font-size: 1em;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 2em 0;
+  display: block;
+}
+
+main .button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+main .button #go_out {
+  display: block;
+  color: #fff;
+  -webkit-transition: background-color ease .3s;
+  transition: background-color ease .3s;
+  background-color: #1e1e1ee8;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  padding: .7em;
+  position: relative;
+}
+
+main .button #go_out:hover {
+  background-color: #1e1e1e;
+}
+/*# sourceMappingURL=profile.css.map */

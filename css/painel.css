@@ -1,0 +1,177 @@
+main {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+main #top-content {
+  margin: 0 auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #top-content svg {
+  margin: 1em;
+}
+
+main #top-content #routine {
+  border: 1px solid #1E1E1E;
+  border-collapse: collapse;
+  text-align: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  max-width: 500px;
+}
+
+main #top-content #routine th div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #top-content #routine th span {
+  line-height: 42px;
+}
+
+main #top-content #routine thead {
+  color: #fff;
+  background-color: #1E1E1E;
+}
+
+main #top-content #routine tbody tr:nth-child(1) td {
+  padding: 1em .5em 0;
+}
+
+main #top-content #routine tbody tr:nth-child(2) td {
+  padding: 0 .5em 1em;
+}
+
+main #bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main #bottom-content #calendar {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 400px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+main #bottom-content #calendar table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+main #bottom-content #calendar thead {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+main #bottom-content #calendar thead th {
+  padding: .5em;
+}
+
+main #bottom-content #calendar thead tr:nth-child(1) th {
+  font-size: 1.2em;
+}
+
+main #bottom-content #calendar tbody td {
+  position: relative;
+  border: 1px solid #1E1E1E;
+}
+
+main #bottom-content #calendar tbody span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: .7em;
+}
+
+main #bottom-content #tech {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: 300px;
+  min-width: 350px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 1px solid #1E1E1E;
+}
+
+main #bottom-content #tech table {
+  border-collapse: collapse;
+}
+
+main #bottom-content #tech thead {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+main #bottom-content #tech thead th {
+  text-align: center;
+  padding: .5em;
+}
+
+main #bottom-content #tech tbody tr {
+  border-bottom: 1px solid #1E1E1E;
+}
+
+main #bottom-content #tech tbody tr td:nth-child(1) {
+  background-color: #1E1E1E;
+  color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main #bottom-content #tech tbody tr td:nth-child(2) {
+  width: 80%;
+}
+
+main #bottom-content #tech tbody td {
+  padding: .6em 1em;
+}
+/*# sourceMappingURL=painel.css.map */

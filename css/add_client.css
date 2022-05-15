@@ -1,0 +1,126 @@
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90vh;
+}
+
+main .button {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  padding: .7em;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #1E1E1E;
+}
+
+main #client_data {
+  margin: 1em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  gap: 0 10px;
+      grid-template-areas: 'info info' 'nome nome'  'email tel'  'cpf .';
+}
+
+main #client_data h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+}
+
+main #client_data #name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nome;
+}
+
+main #client_data #email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+main #client_data #tel {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: tel;
+}
+
+main #client_data #cpf {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: cpf;
+}
+
+main #hardware {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 10px;
+      grid-template-areas: 'info info info' 'select marca modelo';
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+main #hardware h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+}
+
+main #hardware #brand {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: marca;
+}
+
+main #hardware #model {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: modelo;
+}
+
+main #hardware select {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: select;
+}
+
+main input, main select {
+  margin: 10px 0;
+  width: 100%;
+  height: 40px;
+  font-size: .9em;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #1E1E1E;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=add_client.css.map */

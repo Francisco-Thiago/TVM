@@ -1,0 +1,48 @@
+$black: #1E1E1E;
+$white: #FFF;
+$gray: rgba(0, 0, 0, 0.712);
+$red: #FF0000;
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    div {
+        margin-bottom: .5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: .5em;
+    }
+
+    a {
+        display: inline-block;
+        margin: .3em;
+        padding: .5em 3em;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background-color ease .4s;
+    }
+
+    .edit a{
+        color: $white;
+        background-color: $black;
+        &:hover {
+            background-color: $gray;
+        }
+    }
+
+    .remove a{
+        background-color: transparent;
+        border: 1px solid $red;
+        color: $red;
+        &:hover {
+            color: $white;
+            background-color: $red;
+        }
+    }
+}
