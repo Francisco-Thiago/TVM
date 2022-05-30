@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.hide-modal {
+  z-index: -1;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.308);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: white;
+  width: 80vw;
+  height: 100%;
+  border-radius: 10px;
+  max-height: 400px;
+  background-color: rgba(0, 0, 0, 0.776);
+}
+
+.modal .box textarea {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 80%;
+  color: white;
+  padding: 1em;
+  max-height: 150px;
+}
+
+.modal .box .info {
+  font-family: 'montserrat', sans-serif;
+  width: 80%;
+}
+
+.modal .box .info p, .modal .box .info div {
+  margin: .5em 0;
+}
+
+.modal .box .info .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.modal .box .close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.modal .box .close:hover {
+  background-color: rgba(0, 0, 0, 0.285);
+}
+
+.modal .box .client-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(30%, -30%);
+          transform: translate(30%, -30%);
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+main {
+  font-family: 'montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1em;
+  width: 100%;
+  min-width: 200px;
+  max-width: 80%;
+}
+
+main #profile #user-image {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+main #profile #user-informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+main #table {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 100%;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 1em;
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+main #table .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main #table .item .code, main #table .item .name {
+  -webkit-transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+main #table .item:hover {
+  cursor: pointer;
+}
+
+main #table .item:hover .code {
+  color: black;
+  background-color: white;
+}
+
+main #table .item:hover .name {
+  color: white;
+  background-color: #000;
+}
+
+main #table .item .code {
+  color: #fff;
+  background-color: black;
+  width: 30%;
+}
+
+main #table .item .name {
+  width: 70%;
+}
+
+main #table .item .code, main #table .item .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2.5px solid black;
+  min-height: 40px;
+  padding: .5em;
+}
+/*# sourceMappingURL=funcionary.css.map */
