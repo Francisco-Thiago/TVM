@@ -44,7 +44,7 @@
           flex-direction: column;
   position: relative;
   color: white;
-  width: 80vw;
+  width: 620px;
   height: 100%;
   border-radius: 10px;
   max-height: 400px;
@@ -62,7 +62,7 @@
 
 .modal .box .info {
   font-family: 'montserrat', sans-serif;
-  width: 620px;
+  width: 80%;
 }
 
 .modal .box .info p, .modal .box .info div {
