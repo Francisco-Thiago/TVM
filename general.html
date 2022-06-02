@@ -64,15 +64,43 @@
             </div>
         </div>
     </div>
-    <main>
-        <div class="warning">
-            <h1>Oops</h1>
-            <blockquote>
-                Lamentamos em dizer que o Design dessa tela ainda está em produção. Por favor, volte mais tarde.
-                <cite>- Equipe TVM</cite>
-            </blockquote>
-
+    <section class="modal">
+        <div class="box">            
+            <div class="close">X</div>
+            <div class="client-image">
+                <img src="" alt="">
+            </div>
+            <div id="content">
+                <div id="superior">
+                    <div>
+                        <h2>Troca de peça</h2>
+                        <div class="personalizedInput">
+                            <label for="change">R$</label>
+                            <input id="change" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Valor adicional</h2>
+                        <div class="personalizedInput">
+                            <label for="addition">R$</label>
+                            <input id="addition" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div id="inferior">
+                    <div>
+                        <h2>Mão de obra</h2>
+                        <div class="personalizedInput">
+                            <label for="labor">R$</label>
+                            <input id="labor" type="text">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Gerar" id="submit">
+            </div>
         </div>
+    </section>
+    <main>
     </main>
 </body>
 </html>
