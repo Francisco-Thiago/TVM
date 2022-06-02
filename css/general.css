@@ -1,4 +1,59 @@
-main {
+.modal {
+  font-family: 'montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.308);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal h1 {
+  margin-bottom: 10px;
+}
+
+.modal .personalizedInput {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.modal label {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.modal input {
+  background-color: transparent;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  border: 1px solid white;
+  width: 150px;
+  height: 30px;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.modal .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,25 +63,67 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-}
-
-main div {
-  padding: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: white;
+  width: 100%;
+  max-width: 620px;
+  height: 100%;
   border-radius: 10px;
-  max-width: 400px;
-  -webkit-box-shadow: 0 0 .4em;
-          box-shadow: 0 0 .4em;
-  background-color: #1e1e1e;
+  max-height: 400px;
+  background-color: rgba(0, 0, 0, 0.776);
 }
 
-main h1 {
-  font-size: 2em;
-  color: #fff;
+.modal .box #superior, .modal .box #inferior {
+  margin: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-main blockquote {
-  color: #fff;
+.modal .box #submit {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+
+.modal .box .close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.modal .box .close:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.modal .box .client-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(30%, -30%);
+          transform: translate(30%, -30%);
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=general.css.map */

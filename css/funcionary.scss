@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
@@ -24,18 +24,29 @@
         flex-direction: column;
         position: relative;
         color: white;
-        width: 80vw;
+        width: 620px;
         height: 100%;
         border-radius: 10px;
         max-height: 400px;
         background-color: rgba(0, 0, 0, 0.776);
+
+        #submit {
+            width: 80%;
+            padding: 1em;
+            margin-top: 5px;
+            border-radius: 5px;
+            background-color: $white;
+            color: $black;
+            cursor: pointer;
+        }
         
         textarea {
             background-color: transparent;
             border: 2px solid white;
-            width: 80%;
+            width: 100%;
             color: white;
             padding: 1em;
+            max-width: 80%;
             max-height: 150px;
         }
 
@@ -67,7 +78,8 @@
             border-radius: 50%;
             
             &:hover {
-                background-color: rgba(0, 0, 0, 0.285);
+                background-color: $white;
+                color: #000;
             }
         }
 
@@ -138,12 +150,8 @@ main {
 
             &:hover {
                 cursor: pointer;
-                .code {
-                    color: black;
-                    background-color: white;
-                }
                 .name {
-                    color: white;
+                    color: $white;
                     background-color: #000;
                 }
             }
